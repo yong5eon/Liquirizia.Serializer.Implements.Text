@@ -1,8 +1,5 @@
-# Liquirizia.Serializer.Implements.Text
-텍스트 형식으로 통신하기 위한 직렬화 및 비직렬화 도구
+# -*- coding: utf-8 -*-
 
-## 사용법
-```python
 from Liquirizia.Serializer import SerializerHelper
 import Liquirizia.Serializer.Implements.Text
 
@@ -36,7 +33,5 @@ if __name__ == '__main__':
   encoded = SerializerHelper.Encode({}, format='text/plain', charset='utf-8')
   decoded = SerializerHelper.Decode(encoded, format='text/plain', charset='utf-8')
   print(encoded, decoded)
-```
 
-## 개선사항
-* [ ] DataModelObject 지원
+  # TODO : Support DataModelObject
