@@ -2,6 +2,8 @@
 
 from Liquirizia.Serializer import Serializer
 
+from ast import literal_eval
+
 __all__ = (
 	'Decoder'
 )
@@ -13,4 +15,7 @@ class Decoder(Serializer):
 	def __call__(self, obj):
 		if not isinstance(obj, str):
 			raise RuntimeError('{} is not string'.format(obj))
-		return obj
+		try:
+			return literal_eval(obj)
+		except:
+			return obj
