@@ -3,14 +3,15 @@
 from .Encoder import Encoder
 from .Decoder import Decoder
 
-from Liquirizia.Serializer import SerializerHelper
-
 __all__ = (
+	'FORMATS',
 	'Encoder',
 	'Decoder',
 )
 
-SerializerHelper.Set('text/plain', Encoder, Decoder)
-SerializerHelper.Set('text', Encoder, Decoder)
-SerializerHelper.Set('text/html', Encoder, Decoder)
-SerializerHelper.Set('html', Encoder, Decoder)
+FORMATS = [
+	'text/plain',
+	'text',
+	'text/html',
+	'html',
+]
