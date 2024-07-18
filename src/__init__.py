@@ -12,6 +12,4 @@ __all__ = (
 FORMATS = [
 	'text/plain',
 	'text',
-	'text/html',
-	'html',
 ]
