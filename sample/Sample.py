@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from Liquirizia.Serializer import SerializerHelper
-import Liquirizia.Serializer.Implements.Text
 
 
 if __name__ == '__main__':
