@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 PKG = 'Liquirizia.Serializer.Implements.Text'
 SRC = 'src'
 EXCLUDES = []
-DESC = 'Text Serializer of Python Modernized Application Framework Liquirizia'
+DESC = 'Text Serializer of Liquirizia'
 WHO = 'Heo Yongseon'
 
 PKGS = [PKG]
@@ -29,9 +29,9 @@ setup(
 		'Programming Language :: Python :: 3.9',
 		'Programming Language :: Python :: 3.10',
 		'Programming Language :: Python :: 3.11',
-		'Application Framework :: Liquirizia',
-		'Application Framework :: Liquirizia :: Serializer',
-		'Application Framework :: Liquirizia :: Serializer :: Text',
+		'Liquirizia',
+		'Liquirizia :: Serializer',
+		'Liquirizia :: Serializer :: Text',
 	],
 	install_requires=[
 		'Liquirizia@git+https://github.com/yong5eon/Liquirizia.git',
